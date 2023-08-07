@@ -1,0 +1,12 @@
+def FindSumOfDigits(num):
+    sum=0
+    remainder=0
+    while(num!=0):
+        remainder= num%10
+        sum+=remainder
+        num=num//10
+        
+    return sum
+
+number= int(input("Please enter a number: "))
+print("Sum of digits of ", number," is ", FindSumOfDigits(number))
